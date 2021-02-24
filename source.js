@@ -1,4 +1,5 @@
-const pitScouter = {
+let rowLen = [1, 2, 1, 2, 1];
+const scouter = {
   "Pregame" : {
     "General Information" : {
       "Scouter Name" : {
@@ -39,11 +40,11 @@ const pitScouter = {
   },
   "Autonomous" : {
     "Power Ports" : {
-      "Upper" : {
+      "Auton Upper" : {
         "element" : "input",
         "type" : "number"
       },
-      "Lower" : {
+      "Auton Lower" : {
         "element" : "input",
         "type" : "number"
       }
@@ -63,15 +64,21 @@ const pitScouter = {
         "element" : "input",
         "type" : "checkbox"
       }
+    },
+    "" :{
+      "Defensive Gameplay?" : {
+        "element" : "input",
+        "type" : "checkbox"
+      }
     }
   },
   "Tele-Op" : {
     "Power Ports" : {
-      "Upper" : {
+      "Tele Upper" : {
         "element" : "input",
         "type" : "number"
       },
-      "Lower" : {
+      "Tele Lower" : {
         "element" : "input",
         "type" : "number"
       }
@@ -94,6 +101,15 @@ const pitScouter = {
       "Trench" : {
         "element" : "input",
         "type" : "checkbox"
+      }
+    }
+  },
+  "Arena" : {
+    "" : {
+      "" : {
+        "element" : "img",
+        "type" : "image",
+        "src" : "./arenaDiagram.png"
       }
     }
   },

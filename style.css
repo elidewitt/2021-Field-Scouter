@@ -1,6 +1,13 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 html {
-  width: 800px;
   background-color: #303030;
+  /* Disables the double tap to zoom in feature on mobile devices */
+  touch-action: manipulation;
 }
 
 div {
@@ -9,7 +16,6 @@ div {
   padding: 5px;
   text-align: center;
   background-color: transparent;
-
 }
 
 div.tab {
@@ -22,42 +28,44 @@ div.card {
 }
 
 p, h1, h2, h3, h4, h5, h6 {
+  font-size: 3vw;
   color: white;
   text-align: center;
-  padding-right: 5px;
-  margin: 5px;
+  padding-right: 1vw;
+  margin: 1vw;
   font-family: serif;
 }
 
 h1 {
-  font-size: 30px;
-  margin: 5px;
+  font-size: 7vw;
+  margin: 1vw;
 }
 
 h2 {
-  font-size: 20px;
-  margin: 5px;
+  font-size: 4vw;
+  margin: 1vw;
 }
 
-input:not([type=checkbox]), select {
+input:not([type=checkbox]), select, textarea {
+  font-size: 4vw;
+  color: #AA0A0C;
+  font-weight: bold;
+  width: 100%;
   box-sizing: border-box;
-  padding: 5px;
+  padding: 1vw;
+  height: 8vw;
 }
 
 input[type=checkbox] {
-  -ms-transform: scale(2);
-  -moz-transform: scale(2);
-  -webkit-transform: scale(2);
-  -o-transform: scale(2);
-  transform: scale(2);
-  padding: 5px;
-  margin: 5px;
+  zoom: 3;
+  padding: 1vw;
+  margin: 0px;
 }
 
-button {
+button[type=submit] {
   width: 100%;
-  margin-top: 5px;
-  font-size: 30px;
+  margin-top: 1vw;
+  font-size: 3vw;
   background-color: #AA0A0C;
   border: none;
   color: white;
@@ -66,18 +74,28 @@ button {
 
 div.column {
   float: left;
-  /* width: 50%; */
-  margin: 0px;
-  padding: 0px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 1vw;
+  padding: 0;
   border: none;
 }
 
 div.row {
   display: flex;
-  margin: 0px;
-  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-#questions {
-
+p.numButton {
+  color: #AA0A0C;
+  padding: 0;
+  font-weight: bold;
 }
+
+textarea { resize: vertical; }
