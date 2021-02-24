@@ -64,12 +64,6 @@ const scouter = {
         "element" : "input",
         "type" : "checkbox"
       }
-    },
-    "" :{
-      "Defensive Gameplay?" : {
-        "element" : "input",
-        "type" : "checkbox"
-      }
     }
   },
   "Tele-Op" : {
@@ -99,6 +93,12 @@ const scouter = {
         "type" : "checkbox"
       },
       "Trench" : {
+        "element" : "input",
+        "type" : "checkbox"
+      }
+    },
+    "" :{
+      "Defensive Gameplay?" : {
         "element" : "input",
         "type" : "checkbox"
       }
