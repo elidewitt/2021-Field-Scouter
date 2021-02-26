@@ -56,11 +56,11 @@ const scouter = {
       }
     },
     "Shooting Location" : {
-      "Target Zone" : {
+      "Auton Target Zone" : {
         "element" : "input",
         "type" : "checkbox"
       },
-      "Trench" : {
+      "Auton Trench" : {
         "element" : "input",
         "type" : "checkbox"
       }
@@ -88,11 +88,11 @@ const scouter = {
       }
     },
     "Shooting Location" : {
-      "Target Zone" : {
+      "Tele Target Zone" : {
         "element" : "input",
         "type" : "checkbox"
       },
-      "Trench" : {
+      "Tele Trench" : {
         "element" : "input",
         "type" : "checkbox"
       }

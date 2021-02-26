@@ -5,6 +5,11 @@ function validateAndSubmit() {
 
   let valid = validate();
   if (valid.bool == true) {
+
+    //manually set local storage for scouter name and match num
+    localStorage.setItem("Scouter Name", document.getElementById("Scouter Name").value);
+    localStorage.setItem("Match Number", Number(document.getElementById("Match Number").value) + 1);
+
     fileName = document.getElementById("Match Number").value + "-" + document.getElementById("Team Number").value.slice(0, 4) + "_F.xml";
     xmlDoc = createXML(formName);
 
