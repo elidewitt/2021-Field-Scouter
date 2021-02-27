@@ -119,14 +119,9 @@ const scouter = {
         "element" : "select",
         "type" : "text",
         "options" : ["None", "Park", "Hang"]
-      },
-      "Cell Loading Method" : {
-        "element" : "select",
-        "type" : "text",
-        "options" : ["Driver Station", "Pick up off Ground", "Both", "Other (Specify in comments)"]
       }
     },
-    "End Game" : {
+    "" : {
       "Can they Hang" : {
         "element" : "input",
         "type" : "checkbox"
