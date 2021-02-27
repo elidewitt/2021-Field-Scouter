@@ -122,10 +122,6 @@ const scouter = {
       }
     },
     "" : {
-      "Can they Hang" : {
-        "element" : "input",
-        "type" : "checkbox"
-      },
       "Leveling method" : {
         "element" : "input",
         "type" : "checkbox"
